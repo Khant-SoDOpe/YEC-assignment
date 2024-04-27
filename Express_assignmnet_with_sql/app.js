@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 
-const sequelize = new Sequelize('watched_movies_db', 'root', 'deerinbanch', {
+const sequelize = new Sequelize('watched_movies_db', 'DB_name', 'DB_Password', {
   host: 'localhost',
   dialect: 'mysql'
 });
